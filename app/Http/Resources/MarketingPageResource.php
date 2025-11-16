@@ -22,6 +22,7 @@ class MarketingPageResource extends JsonResource
                     'last_name' => $this->last_name,
                     'image' => $this->image
                 ],
+                'id'=>$this->id,
                 'name' => $this->name,
                 'image' => $this->image,
                 'category' => $this->category->category_name,
@@ -30,6 +31,7 @@ class MarketingPageResource extends JsonResource
         }
 
         return [
+            'id'=>$this->id,
             'name' => $this->name,
             'image' => $this->image,
             'category' => $this->category->category_name,
