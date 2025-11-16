@@ -23,7 +23,7 @@ class MarketingPageRequest extends FormRequest
     {
         return [
             'name' => 'required|string',
-            'category_id' => 'required|integer',
+            'category_id' => 'required|exists:categories,id',
             'image' => 'required|image|',
             'description' => 'required|string',
         ];

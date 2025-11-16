@@ -19,6 +19,7 @@ class AppServiceProvider extends ServiceProvider
     {
         $apiRouteFiles = [
             'auth.php',
+            'marketingPage.php'
 
         ];
 
