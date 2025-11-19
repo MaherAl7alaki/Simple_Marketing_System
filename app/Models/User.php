@@ -53,4 +53,9 @@ class User extends Authenticatable
     public function marketingPages(){
         return $this->hasMany(MarketingPage::class);
     }
+
+    public function friendShips()
+    {
+        return $this->belongsToMany(User::class, 'friendships', 'user_id', 'friend_id');
+    }
 }
